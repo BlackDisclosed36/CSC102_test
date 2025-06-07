@@ -1,0 +1,79 @@
+<!-- Created by Justin Harris, June 6, 2025 -->
+<doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Driven Programming</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="eventDriven.js" defer></script>
+
+    <body>
+        <h1>Event Driven Programming</h1>
+        <button id="justDriveButton">Just Drive!</button>
+        <div id="output">
+            <p>Click the button to see an event in action!</p>
+        </div>
+
+        <script>
+            document.getElementById('justDriveButton').addEventListener('click', function() {
+                document.getElementById('output').innerHTML = '<p class="success">Button clicked successfully!</p>';
+            });
+        </script>
+    </body>
+
+    <body>
+        <h1>Event Driven Programming</h1>
+        <button id="moreDrivenButton">More Driven!</button>
+        <div id="output">
+            <p>Click the button to see an event in action!</p>
+        </div>
+
+        <script>
+            document.getElementById('moreDrivenButton').addEventListener('click', function() {
+                document.getElementById('output').innerHTML = '<p class="success">Button clicked successfully!</p>';
+            });
+        </script>
+    </body>
+    
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #output p {
+            margin: 0;
+            color: #555;
+        }
+
+        #output p.error {
+            color: red;
+        }
+        #output p.success {
+            color: green;
+        }
+        #output p.warning {
+            color: orange;
+        }
