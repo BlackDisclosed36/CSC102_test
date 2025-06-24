@@ -1,0 +1,29 @@
+<!-- 
+    Name: Justin Harris
+    Assignment: JavaScript Programming Concepts Webpage
+    Description: This webpage includes decision logic, loops, string manipulation, functions, and object-oriented JavaScript.
+-->
+
+<!-- DOCTYPE html -->
+ <!-- html lang="en" -->
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>JavaScript Programming Concepts</title>
+     <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+     <h1>JavaScript Programming Concepts</h1>
+     <button id="startButton">Start Programming</button>
+     <div id="output">
+         <p>Click the button to begin your programming journey!</p>
+     </div>
+
+     <script>
+         document.getElementById('startButton').addEventListener('click', function() {
+             document.getElementById('output').innerHTML = '<p class="success">Let the programming begin!</p>';
+         });
+     </script>
+ </body>
+</html>
+<!-- </html> -->
