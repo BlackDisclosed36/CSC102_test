@@ -1,0 +1,73 @@
+<!-- Justin Harris, Bird Sounds, This webpage plays a background sound and includes visual styling to enhance user experience.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Metadata and title page -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bird Sounds</title>
+        
+
+        <!--Internal CSS styles to enhance the look and feel -->
+       <style>
+           body {
+               background-color: #f0f0f0;
+               font-family: Arial, sans-serif;
+               padding: 20px;
+           }
+           h1 {
+               color: #333;
+           }
+           button {
+               padding: 10px 15px;
+               font-size: 16px;
+               background-color: #007BFF;
+               color: white;
+               border: none;
+               border-radius: 5px;
+               cursor: pointer;
+           }
+           button:hover {
+               background-color: #0056b3;
+           }
+           #output {
+               margin-top: 20px;
+               padding: 10px;
+               background-color: #fff;
+               border: 1px solid #ccc;
+               border-radius: 5px;
+           }
+           #output p {
+               margin: 0;
+               color: #555;
+           }
+
+           #output p.error {
+               color: red;
+           }
+           #output p.success {
+               color: green;
+           }
+           #output p.warning {
+               color: orange;
+           }
+       </style>
+
+   <!-- Main header of the webpage -->
+    <h1>Experience the Sounds of Birds</h1>
+
+    <!-- Add a themed image -->
+    <img src="bird.jpg" alt="Bird Image">
+
+    <audio id="birdSound">
+        <source src="meadowlark_daniel-simion.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        //Function to play the bird sound
+        function playBirdSound() {
+            document.getElementById('birdSound').play();
+        }
+    </script>
